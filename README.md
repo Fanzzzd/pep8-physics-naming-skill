@@ -26,7 +26,7 @@ Full rules, decision flow, symbol tables, and worked examples live in [`python-p
 ### Via [`skills.sh`](https://skills.sh) (recommended)
 
 ```sh
-npx skills add KlausFan/python-physics-naming
+npx skills add Fanzzzd/python-physics-naming
 ```
 
 This drops the skill into your active agent's skills directory (`~/.claude/skills/python-physics-naming/`, `.cursor/skills/python-physics-naming/`, etc.).
@@ -34,7 +34,7 @@ This drops the skill into your active agent's skills directory (`~/.claude/skill
 Target a specific agent:
 
 ```sh
-npx skills add KlausFan/python-physics-naming -a claude-code
+npx skills add Fanzzzd/python-physics-naming -a claude-code
 ```
 
 ### Manual
