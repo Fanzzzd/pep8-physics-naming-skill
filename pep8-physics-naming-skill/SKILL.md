@@ -1,11 +1,11 @@
 ---
-name: pep8-physics-skill
+name: pep8-physics-naming-skill
 description: Physics variable naming for Python — combines PEP 8 formatting, ISO/IEC 80000 physical-quantity symbols, the Google Python Style rule that licenses short mathematical names, and unit-suffix conventions. Use when writing Python code involving physical quantities (mass, velocity, energy, force, temperature, wavelength, pressure, charge, etc.), implementing algorithms from physics papers or textbooks, scientific computing with numpy / scipy / astropy / pint / unyt, numerical solvers, or whenever variable names for physical quantities are being chosen.
 ---
 
-# pep8-physics-skill — Physics Variable Naming for Python
+# pep8-physics-naming-skill — Physics Variable Naming for Python
 
-There is no single authoritative "Python physics naming standard". `pep8-physics-skill` is the minimal composition that actually carries authority:
+There is no single authoritative "Python physics naming standard". `pep8-physics-naming-skill` is the minimal composition that actually carries authority:
 
 1. **PEP 8** (formatting: `snake_case`, `UPPER_SNAKE`, identifier hygiene)
 2. **Google Python Style Guide §3.16** (explicitly *licenses* short math names when they match the source paper)

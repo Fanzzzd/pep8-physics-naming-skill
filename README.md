@@ -1,4 +1,4 @@
-# pep8-physics-skill
+# pep8-physics-naming-skill
 
 A Claude / Codex / Cursor **Agent Skill** that teaches the agent to name physical-quantity variables in Python correctly.
 
@@ -6,7 +6,7 @@ A Claude / Codex / Cursor **Agent Skill** that teaches the agent to name physica
 >
 > **PEP 8** (formatting) + **Google Python Style §3.16** (short-name license) + **ISO/IEC 80000** (symbols) + **unit suffixes or `Quantity` objects** (visible units).
 >
-> `pep8-physics-skill` is that composition, packaged as a skill.
+> `pep8-physics-naming-skill` is that composition, packaged as a skill.
 
 ## What it does
 
@@ -19,46 +19,46 @@ When activated, the skill instructs the agent to:
 - Spell Greek letters in Latin (`alpha`, `omega`, `lambda_`). Never use non-ASCII identifiers.
 - Avoid the PEP 8 banned identifiers `l`, `O`, `I`.
 
-Full rules, decision flow, symbol tables, and worked examples live in [`pep8-physics-skill/SKILL.md`](pep8-physics-skill/SKILL.md).
+Full rules, decision flow, symbol tables, and worked examples live in [`pep8-physics-naming-skill/SKILL.md`](pep8-physics-naming-skill/SKILL.md).
 
 ## Install
 
 ### Via [`skills.sh`](https://skills.sh) (recommended)
 
 ```sh
-npx skills add Fanzzzd/pep8-physics-skill
+npx skills add Fanzzzd/pep8-physics-naming-skill
 ```
 
-This drops the skill into your active agent's skills directory (`~/.claude/skills/pep8-physics-skill/`, `.cursor/skills/pep8-physics-skill/`, etc.).
+This drops the skill into your active agent's skills directory (`~/.claude/skills/pep8-physics-naming-skill/`, `.cursor/skills/pep8-physics-naming-skill/`, etc.).
 
 Target a specific agent:
 
 ```sh
-npx skills add Fanzzzd/pep8-physics-skill -a claude-code
+npx skills add Fanzzzd/pep8-physics-naming-skill -a claude-code
 ```
 
 ### Manual
 
-Copy the `pep8-physics-skill/` directory into your skills directory:
+Copy the `pep8-physics-naming-skill/` directory into your skills directory:
 
 ```sh
 # Claude Code (personal)
-cp -R pep8-physics-skill ~/.claude/skills/pep8-physics-skill
+cp -R pep8-physics-naming-skill ~/.claude/skills/pep8-physics-naming-skill
 
 # Claude Code (project)
-cp -R pep8-physics-skill <your-repo>/.claude/skills/pep8-physics-skill
+cp -R pep8-physics-naming-skill <your-repo>/.claude/skills/pep8-physics-naming-skill
 
 # Cursor (personal)
-cp -R pep8-physics-skill ~/.cursor/skills/pep8-physics-skill
+cp -R pep8-physics-naming-skill ~/.cursor/skills/pep8-physics-naming-skill
 ```
 
 ## Repository layout
 
 ```
-pep8-physics-skill/
+pep8-physics-naming-skill/
 ├── README.md               ← this file
 ├── LICENSE                 ← MIT
-└── pep8-physics-skill/                 ← the skill itself
+└── pep8-physics-naming-skill/                 ← the skill itself
     ├── SKILL.md            ← rules, decision flow, core examples
     └── references/
         ├── iso80000.md     ← full ISO/IEC 80000 symbol tables (parts 3–12)
@@ -68,7 +68,7 @@ pep8-physics-skill/
 
 ## Scope
 
-`pep8-physics-skill` is language-agnostic about the *physics* — it covers classical mechanics, EM, thermodynamics, optics, physical chemistry, atomic/nuclear, dimensionless numbers, and condensed matter (ISO 80000 parts 3–12). It is *Python-specific* in the formatting rules it enforces.
+`pep8-physics-naming-skill` is language-agnostic about the *physics* — it covers classical mechanics, EM, thermodynamics, optics, physical chemistry, atomic/nuclear, dimensionless numbers, and condensed matter (ISO 80000 parts 3–12). It is *Python-specific* in the formatting rules it enforces.
 
 If you want only one subfield, you can delete the unused reference tables — the main `SKILL.md` stands on its own.
 

@@ -1,6 +1,6 @@
 # Unit Suffix Catalog
 
-When a value is a plain float (no `Quantity` object) and the module docstring does not fix units, encode the unit in the name. This file lists the suffixes `pep8-physics-skill` endorses.
+When a value is a plain float (no `Quantity` object) and the module docstring does not fix units, encode the unit in the name. This file lists the suffixes `pep8-physics-naming-skill` endorses.
 
 ## Rules for suffixes
 
